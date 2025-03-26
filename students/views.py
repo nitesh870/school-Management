@@ -14,6 +14,7 @@ class StudentListCreateView(generics.ListCreateAPIView):
 class StudentDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
+    
 
 
 # ✅ Enrollment List & Create API
