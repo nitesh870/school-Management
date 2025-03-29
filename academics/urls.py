@@ -21,8 +21,8 @@ from .views import PeriodListCreateView, PeriodDetailView, TimeTableListCreateVi
 urlpatterns += [
     path('periods/', PeriodListCreateView.as_view(), name='period-list-create'),
     path('periods/<int:pk>/', PeriodDetailView.as_view(), name='period-detail'),
-    path('timetables/', TimeTableListCreateView.as_view(), name='timetable-list-create'),
-    path('timetables/<int:pk>/', TimeTableDetailView.as_view(), name='timetable-detail'),
+    # path('timetables/', TimeTableListCreateView.as_view(), name='timetable-list-create'),
+    # path('timetables/<int:pk>/', TimeTableDetailView.as_view(), name='timetable-detail'),
 ]
 
 from .views import AttendanceListCreateView, AttendanceDetailView
@@ -32,9 +32,9 @@ urlpatterns += [
     path('attendance/<int:pk>/', AttendanceDetailView.as_view(), name='attendance-detail'),
 ]
 
-from .views import ReportCardListCreateView, ReportCardDetailView
+# from .views import ReportCardListCreateView, ReportCardDetailView
 
-urlpatterns += [
-    path('report-cards/', ReportCardListCreateView.as_view(), name='reportcard-list-create'),
-    path('report-cards/<int:pk>/', ReportCardDetailView.as_view(), name='reportcard-detail'),
-]
+# urlpatterns += [
+#     path('report-cards/', ReportCardListCreateView.as_view(), name='reportcard-list-create'),
+#     path('report-cards/<int:pk>/', ReportCardDetailView.as_view(), name='reportcard-detail'),
+# ]
